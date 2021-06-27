@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-27T12:44:56.880Z</updated>
+  <updated>2021-06-27T13:19:41.185Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/06/27/%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%86%E8%A7%89%E6%8A%93%E5%8F%96%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     <id>http://example.com/2021/06/27/%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%86%E8%A7%89%E6%8A%93%E5%8F%96%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</id>
     <published>2021-06-27T11:12:11.000Z</published>
-    <updated>2021-06-27T12:44:56.880Z</updated>
+    <updated>2021-06-27T13:19:41.185Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>&emsp;&emsp;这是大三下的工业机器人系统课程的实验部分，其是一个look-and-pick系统，整个系统由下位机获取图像，上位机图像处理模块，上下位机通信模块，下位机执行作业模块。<br><br/><br>&emsp;&emsp;在本次实验中，个人感觉最值得深入的是对于获取图像之后的处理。将这部分分为三个部分：摄像机标定、手眼标定以及目标检测。</p><hr><h1 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h1><hr><p>&emsp;&emsp;原理借鉴：<a href="https://zhuanlan.zhihu.com/p/94244568">https://zhuanlan.zhihu.com/p/94244568</a><br/><br>&emsp;&emsp;摄像机采集的是二维图像，需要通过摄像机成像几何模型建立目标物体的 3D 坐标和 2D 图像坐标之间的关系，该模型参数就是摄像机标定所确定的内外参数。 &emsp;&emsp;如何理解相机标定： <br/><br>&emsp;&emsp;当我们拿到一张图片，进行识别之后，得到的两部分之间的距离为多少像素，但是这多少像素究竟对应实际世界中的多少米呢？这就需要利用相机标定的结果来将像素坐标转换到物理坐标来计算距离。<br/><br>&emsp;&emsp;当然，仅仅利用单目相机标定的结果，是无法直接从像素坐标转化到物理坐标的，因为透视投影丢失了一个维度的坐标，所以测距其实需要双目相机。<br/>&emsp;&emsp; 其次，相机拍摄的图片存在一定的畸变，包括桶形畸变和枕形畸变。畸变模型包括径向畸变和切向畸变。相机标定的第二个目的就是获得相机的畸变参数，进而对拍摄的图片进行去畸变处理。<br/>&emsp;&emsp;图像坐标系到相机坐标系的转换关系为：</p><p><img src="%5Cimages%5Cpasted-1.png" alt="upload successful"></p>]]></content>
+    <content type="html"><![CDATA[<hr><p>&emsp;&emsp;这是大三下的工业机器人系统课程的实验部分，其是一个look-and-pick系统，整个系统由下位机获取图像，上位机图像处理模块，上下位机通信模块，下位机执行作业模块。<br><br/><br>&emsp;&emsp;在本次实验中，个人感觉最值得深入的是对于获取图像之后的处理。将这部分分为三个部分：摄像机标定、手眼标定以及目标检测。</p><hr><h1 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h1><hr><p>&emsp;&emsp;原理借鉴：<a href="https://zhuanlan.zhihu.com/p/94244568">https://zhuanlan.zhihu.com/p/94244568</a><br/><br>&emsp;&emsp;摄像机采集的是二维图像，需要通过摄像机成像几何模型建立目标物体的 3D 坐标和 2D 图像坐标之间的关系，该模型参数就是摄像机标定所确定的内外参数。 &emsp;&emsp;如何理解相机标定： <br/><br>&emsp;&emsp;当我们拿到一张图片，进行识别之后，得到的两部分之间的距离为多少像素，但是这多少像素究竟对应实际世界中的多少米呢？这就需要利用相机标定的结果来将像素坐标转换到物理坐标来计算距离。<br/><br>&emsp;&emsp;当然，仅仅利用单目相机标定的结果，是无法直接从像素坐标转化到物理坐标的，因为透视投影丢失了一个维度的坐标，所以测距其实需要双目相机。<br/>&emsp;&emsp; 其次，相机拍摄的图片存在一定的畸变，包括桶形畸变和枕形畸变。畸变模型包括径向畸变和切向畸变。相机标定的第二个目的就是获得相机的畸变参数，进而对拍摄的图片进行去畸变处理。<br/>&emsp;&emsp;图像坐标系到相机坐标系的转换关系为：</p><p><img src="/images/pasted-0.png" alt="upload successful"></p>]]></content>
     
     
       
